@@ -1,4 +1,5 @@
 // Fall med luftmotstand
+// Tom Jarle Christiansen
 
 class Ball {
   constructor(x, y, d) {
@@ -28,7 +29,7 @@ function setup() {
 
 function draw() {
   v += g;
-  b1.x += 3;
+  b1.x += 1;
   b1.y += v;
   b1.tegn();
   if(mouseButton) {
