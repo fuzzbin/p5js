@@ -1,4 +1,4 @@
-# Eksperimentell pedagogisk p5.js-lekekasse
+# Eksperimentell pedagogisk lekekasse med p5.js
 
 I dette repoet finner du diverse p5.js-prosjekt som _kan_ være egnet til bruk i skolen, men mye er laget bare for å ha det gøy og lære seg mer om p5.js.
 
