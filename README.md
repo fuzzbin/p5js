@@ -7,3 +7,7 @@ Alle prosjekt er laget i rammeverket [p5.js](https://p5js.org/). Innholdet er i 
 Alt innhold er åpent og fritt tilgjengelig under [Creative Commons 4.0 - BY SA](https://creativecommons.org/licenses/by-sa/4.0/deed.no)
 
 Ta kontakt om det skulle være noe! 😃
+
+## Her kan du se koden i eksemplene
+* [Luftmotstand](https://fuzzbin.github.io/p5js/Luftmotstand/)
+* [tilfeldig_e](https://fuzzbin.github.io/p5js/tilfeldig_e/)
