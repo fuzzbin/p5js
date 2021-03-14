@@ -14,7 +14,7 @@ class Ball {
 }
 
 // Init
-let b1 = new Ball(100, 100, 50);
+let b1 = new Ball(100, 100, 10);
 
 let g = 0.02;
 let v = -1;
@@ -33,6 +33,6 @@ function draw() {
   b1.y += v;
   b1.tegn();
   if(mouseButton) {
-    g -= 0.01;
+    g = -0.01;
   }
 }
