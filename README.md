@@ -9,5 +9,5 @@ Alt innhold er åpent og fritt tilgjengelig under [Creative Commons 4.0 - BY SA]
 Ta kontakt om det skulle være noe! 😃
 
 ## Her kan du se koden i eksemplene
-* [Luftmotstand](https://fuzzbin.github.io/p5js/Luftmotstand/)
+* [Skrått kast](https://fuzzbin.github.io/p5js/Skraatt_kast/)
 * [tilfeldig_e](https://fuzzbin.github.io/p5js/tilfeldig_e/)

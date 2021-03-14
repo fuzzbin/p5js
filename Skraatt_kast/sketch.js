@@ -8,26 +8,31 @@ class Partikkel {
     this.y = y;
     this.d = d;
     this.v_x = v_x;
-    this.v_y = v_y
+    this.v_y = v_y;
+    this.cr = Math.random() * 255;
+    this.cg = Math.random() * 255;
+    this.cb = Math.random() * 255;
   }
 
   tegn() {
     this.v_y += g;
     this.x += this.v_x;
     this.y += this.v_y;
+    fill(this.cr, this.cg, this.cb);
+    noStroke();
     circle(this.x, this.y, this.d);
   }
 }
 
 // Init
-N = 10; // Antall partikler
-let g = 0.02; // "Gravitasjon" nedover
+N = 100; // Antall partikler
+let g = 0.04; // "Gravitasjon" nedover
 let m = 2;
 
 // Lager N partikler
 let partikler = [];
 for ( let i = 0; i < N; i++ ) {
-  partikler.push(new Partikkel(100, 100, 10, Math.random() * 10, -2 * Math.random()));
+  partikler.push(new Partikkel(100, 100, 3, Math.random() * 10, -2 * Math.random()));
 }
 
 function setup() {
