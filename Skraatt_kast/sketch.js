@@ -1,6 +1,7 @@
 // Partikkel i felt
 // Tom Jarle Christiansen - CC BY SA - 2021
 // "Kaster" et gitt antall partikler skrått mot høyre
+//
 
 class Partikkel {
   constructor(x, y, d, v_x, v_y) {
