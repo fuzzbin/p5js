@@ -19,7 +19,7 @@ class Partikkel {
     this.v_y += g;
     this.x += this.v_x;
     this.y += this.v_y;
-    fill(this.cr, this.cg, this.cb);
+    fill(this.cr, this.cg, this.cb); // Fargelegger partikkelen
     noStroke();
     circle(this.x, this.y, this.d);
   }
