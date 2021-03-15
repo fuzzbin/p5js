@@ -1,3 +1,8 @@
+// Sum av tilfeldige tall større enn 1
+// Tom Jarle Christiansen - CC BY SA - 2021
+// Program som ser hvor mange tilfeldige tall
+// som må summeres før summen er større enn en
+
 function setup() {
   createCanvas(800, 800);
 }
