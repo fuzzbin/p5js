@@ -3,7 +3,7 @@
 // Eksemplet er basert på koden i filmen: https://www.youtube.com/watch?v=Rr-5HiXquhw
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1000, 1000);
 }
 
 function draw() {
