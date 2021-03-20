@@ -17,7 +17,7 @@ class Partikkel {
 
     // Oppdaterer egenskapene til partikkelen og tegner den i ny posisjon.
     oppdater() {
-        this.v.mult(0.99);
+        this.v.mult(0.99); // Litt demping. :-)
         this.v.add(this.a);
         this.p.add(this.v);
         circle(this.p.x, this.p.y, this.d);
