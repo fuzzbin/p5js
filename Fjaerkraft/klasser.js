@@ -33,17 +33,17 @@ class Fjær {
         this.a = a;
         this.b = b;
     }
-    
+
     // Beregner Hookes lov (F = -kx) slik at fjære drar
     // partikler i begge ender med riktig kraft. Tilkoblede partiklers
     // akselerasjon blir oppdatert.
     oppdater() {
         let kraft = p5.Vector.sub(this.b.p, this.a.p); // Lager enhetsvektor
-        let x = kraft.mag() - this.lengde;
+        let x = kraft.mag() - this.lengde; // Differansen mellom fjæras hvilelengde og faktiske lengde.
         kraft.normalize();
         kraft.mult(this.k * x); // Hookes lov.
         this.a.skyv(kraft);
-        kraft.mult(-1); // Endepunktene utsettes for motsatt rettet like stor kraft. (N3)
+        kraft.mult(-1); // Endepunktene utsettes for motsatt rettet og like stor kraft. (N3)
         this.b.skyv(kraft);
         // Tegner fjæra
         stroke(255, 0, 0);
