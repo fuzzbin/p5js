@@ -8,15 +8,17 @@ class Partikkel {
     }
 
     skyv(kraft) {
-        let F = kraft.copy();
-        F.div(this.m);
-        this.a.add(F);
+        let f = kraft.copy();
+        let da = p5.Vector.div(f, this.m);
+        this.a.add(da);
     }
 
     oppdater() {
+        this.v.mult(0.99);
         this.v.add(this.a);
         this.p.add(this.v);
         circle(this.p.x, this.p.y, this.d);
+        this.a.mult(0);
     }
 }
 
@@ -29,15 +31,12 @@ class Fjær {
     }
     // F = -kx
     oppdater() {
-        console.log(this.b);
-        let kraft =   p5.Vector.sub(this.b - this.a);
-        let x = kraft.mag() - this.lengde();
+        let kraft = p5.Vector.sub(this.b.p, this.a.p); // Lager enhetsvektor
+        let x = kraft.mag() - this.lengde;
         kraft.normalize();
-        kraft(-1 * this.k * x);
+        kraft.mult(this.k * x);
         this.a.skyv(kraft);
         kraft.mult(-1);
         this.b.skyv(kraft);
-        // F = m * a
-        ret
     }
 }
