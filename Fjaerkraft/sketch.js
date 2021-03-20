@@ -5,6 +5,7 @@
 
 function setup() {
   createCanvas(1000, 1000);
+  // Lager partikler og fjærer
   p1 = new Partikkel(100, 100, 30, 1, 0, 0, 0, 0);
   p2 = new Partikkel(100, 200, 30, 1, 10, 0, 0, 0);
   p3 = new Partikkel(100, 400, 30, 1, 0, 0, 0, 0);
@@ -13,6 +14,7 @@ function setup() {
   f3 = new Fjær(0.01, 50, p1, p3);
 }
 
+// Oppdaterer alle partikler og fjærer (60fps tror jeg)
 function draw() {
   background(220);
   p1.oppdater();
@@ -23,4 +25,5 @@ function draw() {
   f3.oppdater();
 }
 
-let p1, p2, f1, g;
+// Liste med partiklene
+let partikkler = [];
