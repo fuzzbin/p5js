@@ -35,7 +35,7 @@ function setup() {
 
   // Lager N partikler
   for ( let i = 0; i < N; i++ ) {
-    partikler.push(new Partikkel(100, 100, 3, Math.random() * 10, -2 * Math.random()));
+    partikler.push(new Partikkel(300, 300, 3, Math.random() * 10, -10 * Math.random()));
   }
 }
 
