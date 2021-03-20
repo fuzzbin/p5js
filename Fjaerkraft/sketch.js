@@ -24,6 +24,3 @@ function draw() {
   f2.oppdater();
   f3.oppdater();
 }
-
-// Liste med partiklene
-let partikkler = [];
