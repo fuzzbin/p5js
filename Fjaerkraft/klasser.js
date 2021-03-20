@@ -1,4 +1,5 @@
 class Partikkel {
+    // Grunnegenskapene til partiklene
     constructor(x, y, d, m, vx, vy, ax, ay) {
         this.p = createVector(x, y);
         this.v = createVector(vx, vy);
@@ -7,12 +8,14 @@ class Partikkel {
         this.m = m;
     }
 
+    // "Dytter på partiklene" ved å endre akselerasjonen (a = F/m)
     skyv(kraft) {
         let f = kraft.copy();
         let da = p5.Vector.div(f, this.m);
         this.a.add(da);
     }
 
+    // Oppdaterer egenskapene til partikkelen og tegner den i ny posisjon.
     oppdater() {
         this.v.mult(0.99);
         this.v.add(this.a);
@@ -23,13 +26,16 @@ class Partikkel {
 }
 
 class Fjær {
+    // Grunnegenskapene til fjæra
     constructor(k, lengde, a, b) {
         this.k = k;
         this.lengde = lengde;
         this.a = a;
         this.b = b;
     }
-    // F = -kx
+    // Beregner Hookes lov (F = -kx) slik at fjære drar
+    // partikler i begge ender med riktig kraft. Tilkoblede partiklers
+    // akselerasjon blir oppdatert.
     oppdater() {
         let kraft = p5.Vector.sub(this.b.p, this.a.p); // Lager enhetsvektor
         let x = kraft.mag() - this.lengde;
@@ -38,6 +44,7 @@ class Fjær {
         this.a.skyv(kraft);
         kraft.mult(-1);
         this.b.skyv(kraft);
+        // Tegner fjæra
         stroke(255, 0, 0);
         line(this.a.p.x, this.a.p.y, this.b.p.x, this.b.p.y);
     }
