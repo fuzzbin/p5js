@@ -11,3 +11,4 @@ Ta kontakt om det skulle være noe! 😃
 ## Her kan du se koden i eksemplene kjørt på en nettside
 * [Skrått kast](https://fuzzbin.github.io/p5js/Skraatt_kast/)
 * [tilfeldig_e](https://fuzzbin.github.io/p5js/tilfeldig_e/)
+* [Fjærkraftsystem](https://fuzzbin.github.io/p5js/Fjaerkraft/)
