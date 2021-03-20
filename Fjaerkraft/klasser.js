@@ -38,5 +38,7 @@ class Fjær {
         this.a.skyv(kraft);
         kraft.mult(-1);
         this.b.skyv(kraft);
+        stroke(255, 0, 0);
+        line(this.a.p.x, this.a.p.y, this.b.p.x, this.b.p.y);
     }
 }
