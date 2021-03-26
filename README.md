@@ -12,3 +12,4 @@ Ta kontakt om det skulle være noe! 😃
 * [Skrått kast](https://fuzzbin.github.io/p5js/Skraatt_kast/)
 * [tilfeldig_e](https://fuzzbin.github.io/p5js/tilfeldig_e/)
 * [Fjærkraftsystem](https://fuzzbin.github.io/p5js/Fjaerkraft/)
+* [Conways life](https://fuzzbin.github.io/p5js/Conway/)
