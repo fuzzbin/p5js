@@ -10,6 +10,8 @@ let c = 1000;
 function setup() {
   frameRate(5);
   createCanvas(c, c);
+
+  // Lager et tomt brett
   let brett = [];
   for (let i = 0; i < s; i++) {
     let l = [];
@@ -19,20 +21,29 @@ function setup() {
     brett.push(l);
   }
 
-  // Starttilstand
+  // Starttilstand - Startbrettet
+
+  // En "flyer"
   generasjoner.push(brett);
   generasjoner[0][1][2] = 1;
   generasjoner[0][2][3] = 1;
   generasjoner[0][3][1] = 1;
   generasjoner[0][3][2] = 1;
   generasjoner[0][3][3] = 1;
+
+  // En "oscilator"
+  generasjoner[0][5][11] = 1;
+  generasjoner[0][5][12] = 1;
+  generasjoner[0][5][13] = 1;
+
   tegnBrett(generasjoner[0]);
+
 }
 
 function draw() {
   background(220);
-  tegnBrett(generasjoner[generasjoner.length - 1]);
-  generasjoner.push(oppdaterBrett(generasjoner[generasjoner.length - 1]));
+  tegnBrett(generasjoner[generasjoner.length - 1]); // Tegner siste generasjon av brettet
+  generasjoner.push(oppdaterBrett(generasjoner[generasjoner.length - 1])); // Lager neste generasjon av brettet
 }
 
 // Tegner brettet på skjermen med data fra siste generasjon
@@ -59,6 +70,7 @@ function tegnBrett(b) {
 // Lager en ny generasjon av brettet
 function oppdaterBrett(b) {
   let brett = [];
+  // Lager et nytt tomt brett som utgangspunkt for neste generasjon
   for (let i = 0; i < s; i++) {
     let l = [];
     for (let j = 0; j < s; j++) {
@@ -67,12 +79,13 @@ function oppdaterBrett(b) {
     brett.push(l);
   }
   let n = 0;
-  // Sjekker tilstanden i nabocellene
+  // Traverserer alle celler og sjekker tilstanden i nabocellene
   for(let i = 1; i < b.length - 1; i++) {
     for (let j = 1; j < b.length - 1; j++) {
       n = b[i-1][j-1] + b[i-1][j] + b[i-1][j+1];
       n += b[i][j-1] + b[i][j+1];
       n += b[i+1][j-1] + b[i+1][j] + b[i+1][j+1];
+      
       // Bruker reglene på aktuell celle
       if (n < 2 && n > 3) {
         brett[i][j] = 0;
