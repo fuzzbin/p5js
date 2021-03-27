@@ -11,4 +11,4 @@ function draw() {
   r1.tegn();
 }
 
-let g = 0.01;
+let g = 0.1;
