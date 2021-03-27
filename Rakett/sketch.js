@@ -11,4 +11,13 @@ function draw() {
   r1.tegn();
 }
 
+function keyPressed() {
+  g += -0.2;
+  
+}
+
+function keyReleased() {
+  g -= -0.2;
+  }
+
 let g = 0.1;
