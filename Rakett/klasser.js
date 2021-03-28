@@ -18,7 +18,9 @@ class Rakett {
         this.p.add(this.v);
         square(this.p.x, this.p.y, 30);
         if (this.p.y > 300) {
-            this.v.mult(-1);
+            this.p.y = 300;
+            this.v.mult(1, -1);
+ 
         }
     }
-  }
+    }

@@ -13,3 +13,4 @@ Ta kontakt om det skulle være noe! 😃
 * [tilfeldig_e](https://fuzzbin.github.io/p5js/tilfeldig_e/)
 * [Fjærkraftsystem](https://fuzzbin.github.io/p5js/Fjaerkraft/)
 * [Conways life](https://fuzzbin.github.io/p5js/Conway/)
+* [Rakett](https://fuzzbin.github.io/p5js/Rakett/)
