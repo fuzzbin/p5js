@@ -14,3 +14,4 @@ Ta kontakt om det skulle være noe! 😃
 * [Fjærkraftsystem](https://fuzzbin.github.io/p5js/Fjaerkraft/)
 * [Conways life](https://fuzzbin.github.io/p5js/Conway/)
 * [Rakett](https://fuzzbin.github.io/p5js/Rakett/)
+* [Pendel](https://fuzzbin.github.io/p5js/Pendel/)
