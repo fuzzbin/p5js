@@ -15,3 +15,4 @@ Ta kontakt om det skulle være noe! 😃
 * [Conways life](https://fuzzbin.github.io/p5js/Conway/)
 * [Rakett](https://fuzzbin.github.io/p5js/Rakett/)
 * [Pendel](https://fuzzbin.github.io/p5js/Pendel/)
+* [Deteksjon av objekter](https://fuzzbin.github.io/p5js/Objektdeteksjon/)
