@@ -1,6 +1,6 @@
 // Creative Commons - BY SA - 2021
 // Tom Jarle Christiansen
-// Koden er basert på eksempel av Daniel Shiffman: https://thecodingtrain.com/learning/ml5/
+// Koden er kopiert/basert på eksempel av Daniel Shiffman: https://thecodingtrain.com/learning/ml5/
 // Bibliotek: https://ml5js.org/
 // Datasett: https://cocodataset.org/
 
