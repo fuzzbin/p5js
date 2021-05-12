@@ -1,4 +1,4 @@
-// Langtons ant
+// Langtons ant - https://en.wikipedia.org/wiki/Langton%27s_ant
 // CC BY SA - 2021 - Tom Jarle Christiansen
 
 
@@ -29,15 +29,19 @@ let ant = {
 
 const piksler = [];
 
+// Størrelse på brettet
+const bredde = 80;
+const lengde = 80; 
+
 // Funksjoner
 
 function setup() {
   frameRate(200);
   createCanvas(1000, 1000);
   background(220);
-  lagBrett(80, 80);
-  piksler[40][40].aktiv = true;
-  piksler[40][40].tegn();
+  lagBrett(bredde, lengde);
+  piksler[bredde/2][bredde/2].aktiv = true;
+  piksler[bredde/2][bredde/2].tegn();
 }
 
 function draw() {
@@ -56,6 +60,7 @@ function lagBrett(lengde, bredde) {
   }
 }
 
+// Funksjon som beregner neste "trekk"
 function neste(a) {
 
   if ( !piksler[a.x][a.y].aktiv ) {
