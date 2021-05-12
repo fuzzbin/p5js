@@ -1,7 +1,6 @@
 // Langtons ant - https://en.wikipedia.org/wiki/Langton%27s_ant
 // CC BY SA - 2021 - Tom Jarle Christiansen
 
-
 // Klasser
 class Piksel {
   constructor (x, y) {
@@ -21,17 +20,20 @@ class Piksel {
 }
 
 // Globale variabler
+
+// Størrelse på brettet
+const bredde = 80;
+const lengde = 80; 
+
+// Startposisjon til mauren
 let ant = {
-  x: 40,
-  y: 40,
+  x: bredde / 2,
+  y: bredde / 2,
   retning: "venstre"
 };
 
 const piksler = [];
 
-// Størrelse på brettet
-const bredde = 80;
-const lengde = 80; 
 
 // Funksjoner
 
