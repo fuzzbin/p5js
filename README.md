@@ -17,3 +17,4 @@ Ta kontakt om det skulle være noe! 😃
 * [Pendel](https://fuzzbin.github.io/p5js/Pendel/)
 * [Deteksjon av objekter](https://fuzzbin.github.io/p5js/Objektdeteksjon/)
 * [Langtons maur](https://fuzzbin.github.io/p5js/Langton/)
+* [Gravitasjonskunst](https://fuzzbin.github.io/p5js/Gravitasjonskunst/)
