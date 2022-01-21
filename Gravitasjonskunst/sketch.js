@@ -27,8 +27,7 @@ function draw() {
   }
 }
 
-let G = 9.81 / 1000;
-let l = [];;
+let l = [];
 
 class Partikkel {
   constructor(id,m, d, x, y, c) {
@@ -61,10 +60,3 @@ class Partikkel {
     }
   }
 }
-
-
-
-
-
-
-
