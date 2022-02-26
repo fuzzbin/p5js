@@ -4,7 +4,7 @@ function setup() {
   createCanvas(400, 400);
 
   // Tilfeldige initialbetingelser - masse, diameter, x-pos, y-pos, fargekode
-  for ( let i = 0; i < 30; i++) {
+  for ( let i = 0; i < 50; i++) {
     let m = Math.random() * 10000; //
     let d = Math.random() * 10 + 4;
     let x = Math.random() * 400;
@@ -20,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  // background(220);
   for ( let p of l ) {
     p.tegn();
     p.oppdater();
@@ -41,8 +41,8 @@ class Partikkel {
   }
 
   tegn() {
-    //fill(this.c);
-    //noStroke();
+    fill(this.c);
+    noStroke();
     circle(this.posisjon.x, this.posisjon.y, this.d);
   }
 
