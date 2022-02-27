@@ -1,3 +1,6 @@
+// Ulams primtallsspiral
+// Inspirert av bl.a. https://thecodingtrain.com/CodingChallenges/167-prime-spiral.html
+// CC - BY SA - Tom Jarle Christiansen 2022
 
 // Funksjoner
 function erPrimtall(n) {
@@ -25,15 +28,15 @@ let skritt = 0; // Skritt på en side
 let n_tot = 2; 
 let retning = 0;
 
-let o = 1;
+let o = 3;
 
 function setup() {
   // frameRate(2);
   createCanvas(bredde, hoyde);
   background(220);
-  circle((x_0 + x * o), (y_0 + y * o), 1);
+  circle((x_0 + x * o), (y_0 + y * o), o);
   x++;
-  circle((x_0 + x * o), (y_0 + y * o), 1);
+  circle((x_0 + x * o), (y_0 + y * o), o);
 }
 
 function draw() {
@@ -66,7 +69,7 @@ function draw() {
       break;
   }
   if (erPrimtall(n_tot)) {
-    circle((x_0 + x * o), (y_0 + y * o), 1);
+    circle((x_0 + x * o), (y_0 + y * o), o);
     console.log(n_tot);
   }
 }
